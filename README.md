@@ -10,6 +10,18 @@ Upload a public construction bid package. BidBrief reads every page and gives th
 
 </div>
 
+<div align="center">
+
+### [▶ Try the live demo](https://bidbrief-040z.onrender.com/)
+
+</div>
+
+> **Live demo:** https://bidbrief-040z.onrender.com/
+> - Open any package to see the brief, bid items, risks, addenda changes and the page viewer. No sign-up needed. Works on a phone.
+> - The demo runs on a free server that sleeps when idle, so the first visit can take about a minute to wake up.
+> - Uploading your own PDFs needs an access code (available on request). Packages you upload are visible only with your code.
+> - Please upload **public** bid documents only.
+
 > The screenshots use the built-in **synthetic** test package (`python -m bidbrief sample`), which is made up and labeled as such. Real results come from public bid packages listed in [data/SOURCES.md](data/SOURCES.md).
 
 ---
