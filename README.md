@@ -1,33 +1,116 @@
+<div align="center">
+
 # BidBrief
 
-**BidBrief reads a public construction bid package of several hundred pages and gives an estimator a one-page brief, the bid items as a spreadsheet, a list of risks, and answers to questions, each with the page it came from.**
+**Know what's in the bid package before you price it.**
 
-![The Brief view](docs/brief.gif)
-<!-- Record a short GIF of the Brief tab on a real package and save it as docs/brief.gif -->
+Upload a public construction bid package. BidBrief reads every page and gives the estimator the key dates, the bid items in Excel, the risks that could cost money, what the addenda change, and answers to questions, each linked to the exact page it came from.
+
+![BidBrief home](docs/screenshots/home.png)
+
+</div>
+
+> The screenshots use the built-in **synthetic** test package (`python -m bidbrief sample`), which is made up and labeled as such. Real results come from public bid packages listed in [data/SOURCES.md](data/SOURCES.md).
+
+---
 
 ## The problem
 
-Before a heavy-civil contractor decides whether to bid a water, sewer or roadway job, someone reads the whole package: the bid form, the general and supplementary conditions, the specifications and the drawings list. That takes hours or days per job. Missing one clause, such as a high daily penalty for late finish or an unusual testing requirement, can turn a won job into a loss.
+Before a heavy-civil contractor decides whether to bid a water, sewer, drainage or roadway job, someone has to read the whole package: the bid form, the general and supplementary conditions, the specifications, the addenda. That is hours or days per job. Missing one clause, such as a daily penalty for finishing late, rock the contractor must remove at no extra cost, or a bid date moved by an addendum, can turn a won job into a loss.
 
-## What it does and does not do
+BidBrief gives the estimator a head start and shows exactly where to look. It does not price the job or decide whether to bid. A person always makes that call.
 
-It does:
-- **Brief**: project, owner, location, plain-English scope, bid due date, pre-bid meeting, completion time, bid security, bonds, and the five pages to read first. Each field cites its page, or says "Not found in the documents".
-- **Bid Items**: the bid form as a table and an Excel/CSV download. Quantities are copied exactly as printed. Rows the parser is unsure of are tinted yellow for a person to check, and gaps in the item numbering are reported.
-- **Risks**: flags in nine fixed categories (schedule, liquidated damages, payment, bonds and insurance, site conditions, traffic, testing, responsibility shifts, labor), each with a severity and a cited passage.
-- **Ask**: a question box. Answers are 1 to 4 sentences with citations. If the documents do not answer it, it says so and shows the closest pages it checked. Conflicting passages are shown side by side.
-- **Changes**: finds the addenda and lists what each one changes, with the original wording next to the new wording. Revised bid-form rows are compared exactly by code, and facts an addendum changes are marked in red.
-- **Check before you rely on it**: one list of everything a person should look at, such as unreadable pages, results that could not be confirmed on the page, bid rows the parser is unsure of, gaps in item numbers and values an addendum changed. Items can be ticked off.
-- **Every citation** opens the page with the quoted passage highlighted in yellow, with a close-up of the passage.
-- **Print brief** gives a paper copy of the summary, risks and bid items.
+## What it does
 
-It does not price the job, decide whether to bid, read drawings (plan sheets), compare addenda, or replace reading the contract. A person always makes the decision.
+### 1. A one-page brief, every line cited
+
+The key facts sit in a title block like the one on a drawing sheet. A one-line summary at the top says what matters, and a checklist shows what a person should confirm before relying on it.
+
+![Summary](docs/screenshots/summary.png)
+
+### 2. Every result opens the page it came from
+
+Tap any yellow page number. The page opens with the quoted passage highlighted, plus a close-up you can read on a phone.
+
+![Page viewer](docs/screenshots/page_viewer.png)
+
+### 3. Risks, in plain words
+
+Grouped by what they mean for the bid: *could cost real money*, *plan and price for it*, *good to know*. Each risk shows **why it matters** and **what the documents say**.
+
+![Risks](docs/screenshots/risks.png)
+
+### 4. What the addenda change
+
+BidBrief finds the addenda and lists every change, with the original wording next to the new wording. A revised bid-form row is compared exactly by code, and facts an addendum changes get a red tag on the summary.
+
+![Changes](docs/screenshots/changes.png)
+
+### 5. Bid items, straight to Excel
+
+The bid form becomes a searchable table. Quantities are copied exactly as printed, never calculated or rounded. Rows the parser is unsure of are tinted for a person to check, and gaps in item numbering are reported.
+
+![Bid items](docs/screenshots/bid_items.png)
+
+### 6. Ask the bid package
+
+Plain-English questions get a short answer with its source page. Answers are written by AI using only the package. If the documents don't say, BidBrief says so and shows the closest pages it checked.
+
+![Ask](docs/screenshots/ask.png)
+
+### 7. Built for a phone too
+
+A bottom tab bar, bid items as cards, and a full-screen page viewer.
+
+![Phone](docs/screenshots/phone.png)
+
+---
+
+## Why you can trust the output
+
+**The citation check is the core of the design.** Every claim the model writes must come with a quote and a page. Code, never the model, then:
+
+1. **Confirms the quote is on that page** (fuzzy match of 0.9 or higher). If the quote is on another page the model was shown, code moves the citation there.
+2. **Checks every number.** Every number in a claim must be printed in its verified quotes, so nothing is computed, rounded or converted. Writing "60 days" when the page says "sixty days" fails the check.
+3. **Drops or flags what fails.** Risks and changes without a confirmed passage are left out. Brief fields and answers that fail are shown in grey as unverified and added to the checklist.
+
+What could not be read (a scanned page without OCR, for example) is listed for a person, never guessed.
+
+## How it works
+
+```mermaid
+flowchart LR
+  A[Bid package PDFs<br/>+ addenda] --> B[Read pages<br/>text, OCR, sections]
+  B --> C[Bid form tables]
+  B --> D[Search index<br/>keywords + embeddings]
+  D --> E[Brief]
+  D --> F[Risks]
+  D --> G[Addenda changes]
+  D --> H[Ask]
+  C --> I{Citation check<br/>quote on page?<br/>numbers printed?}
+  E --> I
+  F --> I
+  G --> I
+  H --> I
+  I --> J[Web app<br/>desktop + phone]
+```
+
+| Step | Tools |
+|---|---|
+| PDF text, word positions, page images | PyMuPDF |
+| Bid form tables | pdfplumber, then word-position line parsing, then the model on the page image as a last resort |
+| Scanned pages | ocrmypdf + Tesseract (falls back to PyMuPDF + Tesseract) |
+| Search | BM25 keywords + `bge-small-en-v1.5` embeddings (fastembed, ONNX, CPU only), reciprocal-rank fusion, MiniLM cross-encoder rerank |
+| Model | Gemini Flash with JSON output validated by Pydantic, retried once if invalid. A local Qwen through any OpenAI-compatible server also works |
+| Web app | FastAPI and a hand-built HTML/CSS/JS frontend with no build step and self-hosted fonts |
+
+Model calls are rate limited and cached on disk, so re-runs and the evaluation cost nothing extra.
 
 ## Evaluation
 
-Measured on hand-made answer keys (`python -m bidbrief.eval`). These are the real numbers, including the weak ones.
+Measured against hand-made answer keys with `python -m bidbrief.eval`. These are the real numbers, including the weak ones.
 
-> Fill this table from `EVAL_RESULTS.md` after running the evaluation on the three real packages. Do not use the synthetic sample's numbers here.
+> To be filled in from `EVAL_RESULTS.md` after running on the three real public packages. The synthetic sample is not used for these numbers.
 
 | What | Package 1 | Package 2 | Package 3 (messy) | Target |
 |---|---|---|---|---|
@@ -40,138 +123,85 @@ Measured on hand-made answer keys (`python -m bidbrief.eval`). These are the rea
 | Real risks found / false flags | | | | report both |
 | Time to process | | | | under 3 min for 300 pages |
 
-**Error analysis.** Every failure gets one line with its cause (bad OCR, table split across pages, retrieval missed the page, model misread it). The biggest cause gets fixed and the evaluation is re-run:
+Every failure gets one line with its cause (bad OCR, table split across pages, retrieval missed the page, model misread it). The biggest cause is fixed and the evaluation re-run:
 
 ```bash
 python -m bidbrief.eval --label baseline
-# ...fix the biggest cause...
-python -m bidbrief.eval --label "after fix" --compare     # prints the before-and-after table
+python -m bidbrief.eval --label "after fix" --compare     # before/after table
 ```
-
-## How it works
-
-```mermaid
-flowchart LR
-  A[Bid package PDFs] --> B[Ingest: text, OCR, tables, pages]
-  B --> C[Index: BM25 keywords + embeddings]
-  C --> D[Brief]
-  C --> E[Bid Items]
-  C --> F[Risks]
-  C --> G[Ask]
-  D & E & F & G --> H[Citation check]
-  H --> I[Web app]
-```
-
-**The citation check is the core of the design.** Every claim the model writes must include a quote and a page. Code, never the model, then confirms the quote appears on that page (fuzzy match of 0.9 or higher on normalized text). If the quote is on a neighbouring excerpt page instead, code moves the citation to the right page. A second guard checks that every number in a claim is printed in its verified quotes, so nothing is computed, rounded or converted. Claims that fail are dropped (risks) or shown grey as "unverified" (brief fields, answers).
-
-| Step | Tool |
-|---|---|
-| PDF text, word positions, page images | PyMuPDF |
-| Bid form tables | pdfplumber, then word-position line parsing, then the model on the page image as a last resort |
-| OCR for scanned pages | ocrmypdf + Tesseract (falls back to PyMuPDF + Tesseract) |
-| Search | BM25 + `bge-small-en-v1.5` embeddings (fastembed, ONNX, no GPU needed), reciprocal-rank fusion, MiniLM cross-encoder rerank |
-| Model | Gemini Flash with JSON output validated by Pydantic, retried once if invalid; or a local Qwen through any OpenAI-compatible server |
-| App | FastAPI backend and a hand-built HTML/CSS/JS frontend (no build step, fonts self-hosted); the cited page is rendered as an image with a yellow box drawn over the quote's word coordinates, plus a close-up of the passage |
-
-Every model call is rate limited and cached on disk, so re-runs and the evaluation cost nothing extra, and the three demo packages are pre-computed so free-tier limits never break the demo.
-
-## Data
-
-Only publicly posted bid documents are used. Sources, URLs and download dates are in [data/SOURCES.md](data/SOURCES.md). A synthetic package (`python -m bidbrief sample`) exists only for tests; it is marked as synthetic on every page and in the app.
 
 ## Run it
 
-### On BU SCC
-
 ```bash
-unzip bidbrief.zip && cd bidbrief
-BIG_DIR=/projectnb/<project>/<you> bash scripts/setup_scc.sh   # makes the "bidbrf" venv, downloads search models
-source scripts/env.sh                                          # every new session
-nano .env                                                      # paste GEMINI_API_KEY
-python -m bidbrief doctor --ping                               # checks everything, makes one tiny model call
-python -m pytest                                               # 39 tests
-```
-
-Process packages (put each package's PDFs in its own folder under `data/packages/`):
-
-```bash
-python -m bidbrief sample                                  # synthetic test package (optional)
-python -m bidbrief process data/packages/<folder>          # one package
-python -m bidbrief process-all                             # all of them
-python -m bidbrief ask <package_id> "What are the liquidated damages?"
-qsub scripts/process_all.qsub                              # or as a batch job
-```
-
-Start the web app:
-
-```bash
-python -m bidbrief serve --port 8501       # or: bash scripts/run_app.sh
-```
-
-In SCC OnDemand (VS Code), open port 8501 from the **PORTS** tab. From a laptop terminal, `scripts/run_app.sh` prints the `ssh -L` tunnel command.
-
-### Anywhere else
-
-```bash
+git clone https://github.com/Delimiter-Ashish/bidbrief.git && cd bidbrief
 python3 -m venv bidbrf && source bidbrf/bin/activate
 pip install -r requirements.txt
-cp .env.example .env    # add GEMINI_API_KEY
-python -m bidbrief serve
+cp .env.example .env              # add your GEMINI_API_KEY
+python -m bidbrief doctor --ping  # checks the setup
+python -m pytest                  # 35 tests, offline
+
+python -m bidbrief sample                                   # synthetic test package
+python -m bidbrief process data/packages/sample-mapleford   # or your own package folder
+python -m bidbrief serve --port 8501                        # open http://localhost:8501
 ```
 
-Tesseract is optional (`apt install tesseract-ocr` / `brew install tesseract`; on SCC without root: `BIG_DIR=... bash scripts/install_ocr_scc.sh`). Without it, scanned pages are listed under "Check before you rely on it".
+Tesseract is optional (`apt install tesseract-ocr` or `brew install tesseract`). On BU SCC without root, use `scripts/setup_scc.sh` and `scripts/install_ocr_scc.sh`; see [START_HERE.md](START_HERE.md).
 
-### Letting someone try it with their own documents
+**Letting someone try it.** Uploads can be limited with access codes (`python -m bidbrief new-code --prefix NAME --uses 3`). A package added with a code is visible only with that code, and its owner can delete it. Without codes, uploads are open, which is fine on a private machine but not on a public link.
 
-Uploads can be limited with access codes. Each code allows a set number of packages, and a package added with a code is visible only to people who enter that same code. The pre-loaded public packages stay visible to everyone.
+**Hosting.** The `Dockerfile` runs as is on a Hugging Face Docker Space or any container host. Set `GEMINI_API_KEY`, `BIDBRIEF_TRIAL_CODES` and `BIDBRIEF_CONTACT` as secrets.
 
-```bash
-python -m bidbrief new-code --prefix SEAN --uses 3    # prints a code and the .env line
-# add to .env:  BIDBRIEF_TRIAL_CODES=SEAN-XXXX-XXXX:3   (comma-separate several codes)
-python -m bidbrief trials                             # how many each code has used
+<details>
+<summary>Command line reference</summary>
+
+```text
+python -m bidbrief doctor [--download] [--ping]   check the setup
+python -m bidbrief sample                          build the synthetic test package and answer key
+python -m bidbrief process <folder>                process one package
+python -m bidbrief process-all                     process every folder in data/packages
+python -m bidbrief list                            list processed packages
+python -m bidbrief ask <package_id> "question"     ask from the terminal
+python -m bidbrief serve [--port 8501]             start the web app
+python -m bidbrief new-code --prefix NAME --uses 3 make a trial access code
+python -m bidbrief trials                          show trial code usage
+python -m bidbrief.eval [--compare]                run the evaluation
 ```
+</details>
 
-A trial is counted only when a package finishes. If processing fails, it is given back. Without any codes set, uploads are open to anyone who can reach the app, which is fine on SCC but not on a public link. The person who added a package can delete it from the app.
+<details>
+<summary>Project layout</summary>
 
-Use a paid-tier Gemini key for real customer documents. Ask people to upload public bid packages only.
-
-### Hosting the demo
-
-SCC OnDemand links only work for BU accounts, so share a hosted copy. Process the public packages first and commit `data/packages`, `data/work` and `data/results` so the demo loads instantly.
-
-- **Hugging Face Spaces**: create a Docker Space, push the repo (the `Dockerfile` is ready), and add `GEMINI_API_KEY`, `BIDBRIEF_TRIAL_CODES` and `BIDBRIEF_CONTACT` as Space secrets. Free Spaces reset their disk on restart, which also resets trial counts.
-- Any server with Docker: `docker build -t bidbrief . && docker run -p 7860:7860 --env-file .env bidbrief`.
-
-## Settings
-
-All settings are environment variables (see `.env.example`): `BIDBRIEF_LLM` (`gemini`, `openai`, `none`), `GEMINI_API_KEY`, `GEMINI_MODEL`, `LLM_RPM`, `OPENAI_BASE_URL`/`OPENAI_MODEL` for a local model, `BIDBRIEF_MODEL_CACHE`, `BIDBRIEF_EMBEDDINGS`, `BIDBRIEF_RERANK`, `BIDBRIEF_QUOTE_THRESHOLD` (default 90).
-
-## Project layout
-
-```
+```text
 bidbrief/
   ingest.py      PDF text, pages, sections, OCR, chunks with offsets
   tables.py      bid form detection and extraction, Excel/CSV
   index.py       BM25 + embeddings, fusion, rerank
   llm.py         model calls, JSON validation, retry, rate limit, cache
-  citations.py   quote verification, numbers guard, highlight boxes
+  citations.py   quote verification, numbers check, highlight boxes
   brief.py  risks.py  ask.py
   changes.py     addenda: find them, list changes, compare revised bid rows
   pipeline.py    runs a package end to end, saves results
+  server.py      web API: packages, page images, downloads, ask, uploads
+  trials.py      access codes and who can see which package
+  web/           frontend (index.html, styles.css, app.js, fonts)
   eval.py        metrics, error analysis, before/after
   sample.py      synthetic test package + answer key
-  schemas.py     Pydantic models
-  server.py      web API: packages, page images, downloads, ask, uploads
-  trials.py      access codes, trial counts, who can see which package
-  web/           the frontend (index.html, styles.css, app.js, fonts)
-tests/           39 tests, run offline with a stand-in model
+tests/           35 tests that run offline with a stand-in model
 data/            packages, answer keys, results, SOURCES.md
-scripts/         SCC setup, app launcher, batch job
+scripts/         SCC setup, OCR install, app launcher, batch job
 ```
+</details>
+
+## Data
+
+Only publicly posted bid documents are used. Sources, URLs and download dates are recorded in [data/SOURCES.md](data/SOURCES.md).
 
 ## Limits and next steps
 
-- Drawings are images; reading plan sheets needs a vision step (version 2).
-- Addenda are read but not compared against the original documents.
-- Severity is the model's judgment from a fixed guide; the cited passage is always there to check.
-- Answers never use outside knowledge about construction law or practice, by design.
+- Drawings (plan sheets) are images; reading them needs a vision step. That is the planned next version.
+- Risk severity is the model's judgment from a fixed guide. The cited passage is always there to check.
+- Answers never use outside knowledge about construction law or practice, by design. BidBrief shows the clause; the estimator decides what to do about it.
+
+---
+
+Built by **Ashish Joshi** (M.S. Artificial Intelligence, Boston University).
