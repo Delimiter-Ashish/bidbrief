@@ -1,0 +1,8 @@
+bidbrf/
+.venv/
+.model_cache/
+data/llm_cache/
+data/eval_runs/
+.env
+**/__pycache__
+.pytest_cache/

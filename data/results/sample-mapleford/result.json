@@ -1,0 +1,1135 @@
+{
+ "package_id": "sample-mapleford",
+ "title": "SAMPLE (synthetic) - Mapleford Water Main Replacement",
+ "files": [
+  "01_Contract_Documents.pdf",
+  "02_Addendum_1.pdf",
+  "03_Addendum_2_scanned.pdf"
+ ],
+ "page_count": 24,
+ "pages": [
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 1,
+   "section": null,
+   "is_ocr": false,
+   "char_count": 413,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 2,
+   "section": "Table of Contents",
+   "is_ocr": false,
+   "char_count": 832,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 3,
+   "section": "Invitation for Bids",
+   "is_ocr": false,
+   "char_count": 1328,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 4,
+   "section": "Instructions to Bidders",
+   "is_ocr": false,
+   "char_count": 567,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 5,
+   "section": "Instructions to Bidders",
+   "is_ocr": false,
+   "char_count": 511,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 6,
+   "section": "Bid Form",
+   "is_ocr": false,
+   "char_count": 1035,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 7,
+   "section": "Bid Form",
+   "is_ocr": false,
+   "char_count": 542,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 8,
+   "section": "Bid Form",
+   "is_ocr": false,
+   "char_count": 314,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 9,
+   "section": "Agreement",
+   "is_ocr": false,
+   "char_count": 360,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 10,
+   "section": "General Conditions",
+   "is_ocr": false,
+   "char_count": 921,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 11,
+   "section": "General Conditions",
+   "is_ocr": false,
+   "char_count": 850,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 12,
+   "section": "Supplementary Conditions",
+   "is_ocr": false,
+   "char_count": 786,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 13,
+   "section": "Supplementary Conditions",
+   "is_ocr": false,
+   "char_count": 796,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 14,
+   "section": "Supplementary Conditions",
+   "is_ocr": false,
+   "char_count": 505,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 15,
+   "section": "Wage Rates",
+   "is_ocr": false,
+   "char_count": 329,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 16,
+   "section": "Specifications — Section 31 23 00 Excavation And Fill",
+   "is_ocr": false,
+   "char_count": 628,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 17,
+   "section": "Specifications — Section 31 23 00 Excavation And Fill",
+   "is_ocr": false,
+   "char_count": 686,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 18,
+   "section": "Specifications — Section 33 11 00 Water Utility Distribution Piping",
+   "is_ocr": false,
+   "char_count": 584,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 19,
+   "section": "Specifications — Section 02 61 00 Contaminated Soil",
+   "is_ocr": false,
+   "char_count": 366,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 20,
+   "section": "Specifications — Section 34 71 13 Traffic Control",
+   "is_ocr": false,
+   "char_count": 300,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 21,
+   "section": "Specifications — Section 34 71 13 Traffic Control",
+   "is_ocr": false,
+   "char_count": 682,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 22,
+   "section": "Drawings List",
+   "is_ocr": false,
+   "char_count": 256,
+   "problem": null
+  },
+  {
+   "file": "02_Addendum_1.pdf",
+   "page": 1,
+   "section": "Addendum",
+   "is_ocr": false,
+   "char_count": 541,
+   "problem": null
+  },
+  {
+   "file": "03_Addendum_2_scanned.pdf",
+   "page": 1,
+   "section": null,
+   "is_ocr": false,
+   "char_count": 0,
+   "problem": "No readable text (scanned page and OCR was not available or failed)"
+  }
+ ],
+ "brief": {
+  "fields": [
+   {
+    "name": "project_name",
+    "value": "Elm Street and Oak Avenue Water Main Replacement, Contract No. W-2026-04",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 3,
+      "quote": "The Town of Mapleford, acting through its Board of Public Works (the Owner), invites sealed bids for the Elm Street and Oak Avenue Water Main Replacement, Contract No. W-2026-04, in Mapleford, Massachusetts.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "name": "owner",
+    "value": "Town of Mapleford, acting through its Board of Public Works",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 3,
+      "quote": "The Town of Mapleford, acting through its Board of Public Works (the Owner), invites sealed bids for the Elm Street and Oak Avenue Water Main Replacement, Contract No. W-2026-04, in Mapleford, Massachusetts.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "name": "location",
+    "value": "Elm Street and Oak Avenue in Mapleford, Massachusetts",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 3,
+      "quote": "The Town of Mapleford, acting through its Board of Public Works (the Owner), invites sealed bids for the Elm Street and Oak Avenue Water Main Replacement, Contract No. W-2026-04, in Mapleford, Massachusetts.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "name": "scope",
+    "value": "The project consists of replacing approximately 4,850 linear feet of existing 6-inch cast iron water main on Elm Street and Oak Avenue with 12-inch and 8-inch ductile iron water main. Work also includes new gate valves, fire hydrants, water services, temporary water, trench pavement, and final paving. Bid alternates include replacing 420 linear feet of 2-inch galvanized main on Birch Lane with 8-inch ductile iron and adding two hydrant assemblies.",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 3,
+      "quote": "The Work consists of replacing approximately 4,850 linear feet of existing 6-inch cast iron water main on Elm Street and Oak Avenue with 12-inch and 8-inch ductile iron water main, together with new gate valves, fire hydrants, water services, temporary water, trench pavement and final paving.",
+      "verified": true
+     },
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 8,
+      "quote": "A-1    420    LF    Replace 2-inch Galvanized Main on Birch Lane with 8-inch DI",
+      "verified": true
+     },
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 8,
+      "quote": "A-2    2    EA    Additional Hydrant Assembly",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "name": "bid_due",
+    "value": "Until 2:00 PM on Tuesday, November 24, 2026, received at the Office of the DPW Director, 40 Center Street, Mapleford, MA.",
+    "citations": [
+     {
+      "file": "02_Addendum_1.pdf",
+      "page": 1,
+      "quote": "Item 1. The bid opening is changed to 2:00 PM on Tuesday, November 24, 2026. All other terms remain.",
+      "verified": true
+     },
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 3,
+      "quote": "Sealed bids will be received at the Office of the DPW Director, 40 Center Street, Mapleford, MA until 11:00 AM on Thursday, November 19, 2026, at which time they will be publicly opened and read aloud.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "name": "pre_bid_meeting",
+    "value": "10:00 AM on Tuesday, November 3, 2026 at the DPW Garage, 12 Mill Road, Mapleford; attendance is not mandatory.",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 3,
+      "quote": "A pre-bid conference will be held at 10:00 AM on Tuesday, November 3, 2026 at the DPW Garage, 12 Mill Road, Mapleford. Attendance is not mandatory.",
+      "verified": true
+     },
+     {
+      "file": "02_Addendum_1.pdf",
+      "page": 1,
+      "quote": "Item 3. Question: Is the pre-bid conference mandatory? Answer: No.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "name": "completion_time",
+    "value": "Within two hundred ten (210) consecutive calendar days from the date of the Notice to Proceed.",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 12,
+      "quote": "SC-1 Contract Time. The Contractor shall substantially complete the Work within two hundred ten (210) consecutive calendar days from the date of the Notice to Proceed.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "name": "bid_security",
+    "value": "Five percent (5%) of the value of the bid, in the form of a bid bond, certified check, or treasurer's or cashier's check.",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 3,
+      "quote": "Each bid must be accompanied by bid security in the amount of five percent (5%) of the value of the bid, in the form of a bid bond, certified check, or treasurer's or cashier's check.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "name": "bonds",
+    "value": "A performance bond and a labor and materials payment bond, each in the amount of one hundred percent (100%) of the Contract Price, issued by a surety licensed in Massachusetts.",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 5,
+      "quote": "4. The successful Bidder shall furnish a performance bond and a labor and materials payment bond, each in the amount of one hundred percent (100%) of the Contract Price, issued by a surety licensed in Massachusetts.",
+      "verified": true
+     }
+    ]
+   }
+  ],
+  "read_first": [
+   {
+    "reason": "The bid form: the items and quantities you will price.",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 6,
+      "quote": "SYNTHETIC SAMPLE - NOT A REAL BID - Mapleford Contract W-2026-04",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "reason": "Site conditions: Contractor absorbs all risk and cost for rock or boulders encountered without additional compensation.",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 13,
+      "quote": "No claim for additional compensation will be allowed for rock, ledge or boulders encountered in the trench.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "reason": "Bonds and insurance: Contractor must carry a $5,000,000 umbrella liability policy naming the town as additional insured.",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 14,
+      "quote": "In addition to the limits in the General Conditions, the Contractor shall carry umbrella liability insurance of not less than $5,000,000 per occurrence, naming the Town of Mapleford as an additional insured.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "reason": "Site conditions: High groundwater expected between stations 12+00 and 18+00 requires continuous dewatering and sediment controls.",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 16,
+      "quote": "Groundwater is expected near Station 12+00 to 18+00.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "reason": "Site conditions: Petroleum-contaminated soil on Oak Avenue requires special stockpiling, testing, and licensed disposal procedures.",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 19,
+      "quote": "Soil testing at three locations on Oak Avenue found petroleum compounds above reportable concentrations.",
+      "verified": true
+     }
+    ]
+   }
+  ],
+  "note": null
+ },
+ "bid_items": {
+  "items": [
+   {
+    "item_no": "1",
+    "description": "Mobilization and Demobilization, not to exceed 3% of Total Base Bid",
+    "quantity": "1",
+    "unit": "LS",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "2",
+    "description": "Police Details (Allowance)",
+    "quantity": "60,000",
+    "unit": "$",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "3",
+    "description": "Traffic Management Plan and Temporary Signage",
+    "quantity": "1",
+    "unit": "LS",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "4",
+    "description": "12-inch Ductile Iron Water Main, Class 52, including fittings",
+    "quantity": "3,120",
+    "unit": "LF",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "5",
+    "description": "8-inch Ductile Iron Water Main, Class 52, including fittings",
+    "quantity": "1,730",
+    "unit": "LF",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "6",
+    "description": "6-inch Ductile Iron Hydrant Branch",
+    "quantity": "180",
+    "unit": "LF",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "7",
+    "description": "12-inch Gate Valve and Box",
+    "quantity": "9",
+    "unit": "EA",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "8",
+    "description": "8-inch Gate Valve and Box",
+    "quantity": "7",
+    "unit": "EA",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "9",
+    "description": "Fire Hydrant Assembly, complete",
+    "quantity": "12",
+    "unit": "EA",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "10",
+    "description": "1-inch Copper Water Service, Main to Curb Stop",
+    "quantity": "64",
+    "unit": "EA",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "11",
+    "description": "1-inch Copper Water Service, Curb Stop to House",
+    "quantity": "1,150",
+    "unit": "LF",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "12",
+    "description": "Cut and Cap Existing Water Main",
+    "quantity": "6",
+    "unit": "EA",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "13",
+    "description": "Temporary Water Service, complete",
+    "quantity": "1",
+    "unit": "LS",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "14",
+    "description": "Test Pits for Existing Utilities",
+    "quantity": "20",
+    "unit": "EA",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "15",
+    "description": "Rock Excavation and Disposal",
+    "quantity": "150",
+    "unit": "CY",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "16",
+    "description": "Dewatering",
+    "quantity": "1",
+    "unit": "LS",
+    "page": 6,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "17",
+    "description": "Gravel Borrow for Trench Backfill",
+    "quantity": "900",
+    "unit": "CY",
+    "page": 7,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "18",
+    "description": "Disposal of Contaminated Soil (Allowance)",
+    "quantity": "200",
+    "unit": "TON",
+    "page": 7,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "19",
+    "description": "Temporary Trench Pavement, 3-inch",
+    "quantity": "2,450",
+    "unit": "SY",
+    "page": 7,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "20",
+    "description": "Permanent Trench Pavement, 4-inch HMA",
+    "quantity": "2,450",
+    "unit": "SY",
+    "page": 7,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "21",
+    "description": "Pavement Milling and 1.5-inch Overlay, curb to curb",
+    "quantity": "9,800",
+    "unit": "SY",
+    "page": 7,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "22",
+    "description": "Granite Curb Reset",
+    "quantity": "320",
+    "unit": "LF",
+    "page": 7,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "23",
+    "description": "Loam and Seed",
+    "quantity": "1,100",
+    "unit": "SY",
+    "page": 7,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "24",
+    "description": "Pressure Testing, Disinfection and Flushing",
+    "quantity": "1",
+    "unit": "LS",
+    "page": 7,
+    "confidence": 1.0,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "A-1",
+    "description": "Replace 2-inch Galvanized Main on Birch Lane with 8-inch DI",
+    "quantity": "420",
+    "unit": "LF",
+    "page": 8,
+    "confidence": 0.9,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   },
+   {
+    "item_no": "A-2",
+    "description": "Additional Hydrant Assembly",
+    "quantity": "2",
+    "unit": "EA",
+    "page": 8,
+    "confidence": 0.9,
+    "file": "01_Contract_Documents.pdf",
+    "note": ""
+   }
+  ],
+  "bid_form_pages": [
+   [
+    "01_Contract_Documents.pdf",
+    6
+   ],
+   [
+    "01_Contract_Documents.pdf",
+    7
+   ],
+   [
+    "01_Contract_Documents.pdf",
+    8
+   ]
+  ],
+  "numbering_gaps": [],
+  "duplicates": [],
+  "method": "table+text"
+ },
+ "risks": {
+  "flags": [
+   {
+    "category": "Site conditions",
+    "reason": "Contractor absorbs all risk and cost for rock or boulders encountered without additional compensation.",
+    "severity": "High",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 13,
+      "quote": "No claim for additional compensation will be allowed for rock, ledge or boulders encountered in the trench.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "category": "Responsibility shifts",
+    "reason": "Contractor bears subsurface risk with no additional compensation allowed for encountering rock, ledge, or boulders.",
+    "severity": "High",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 13,
+      "quote": "No claim for additional compensation will be allowed for rock, ledge or boulders encountered in the trench.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "category": "Schedule",
+    "reason": "Permanent trench paving is barred from November 15 to April 15, risking winter delays to the overall schedule.",
+    "severity": "Medium",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 13,
+      "quote": "No permanent trench pavement shall be placed after November 15 or before April 15 without the written approval of the Engineer.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "category": "Bonds and insurance",
+    "reason": "Contractor must carry a $5,000,000 umbrella liability policy naming the town as additional insured.",
+    "severity": "Medium",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 14,
+      "quote": "In addition to the limits in the General Conditions, the Contractor shall carry umbrella liability insurance of not less than $5,000,000 per occurrence, naming the Town of Mapleford as an additional insured.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "category": "Site conditions",
+    "reason": "High groundwater expected between stations 12+00 and 18+00 requires continuous dewatering and sediment controls.",
+    "severity": "Medium",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 16,
+      "quote": "Groundwater is expected near Station 12+00 to 18+00.",
+      "verified": true
+     },
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 16,
+      "quote": "The Contractor shall keep excavations free of water and shall discharge only through a sediment control device.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "category": "Site conditions",
+    "reason": "Petroleum-contaminated soil on Oak Avenue requires special stockpiling, testing, and licensed disposal procedures.",
+    "severity": "Medium",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 19,
+      "quote": "Soil testing at three locations on Oak Avenue found petroleum compounds above reportable concentrations.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "category": "Traffic",
+    "reason": "Route 110 intersection work requires night shifts and restricts closures to one lane only.",
+    "severity": "Medium",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 13,
+      "quote": "Work within the Route 110 intersection shall be performed at night between 9:00 PM and 5:00 AM.",
+      "verified": true
+     },
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 13,
+      "quote": "Only one lane of Route 110 may be closed at any time.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "category": "Payment",
+    "reason": "Five percent retainage will be held from progress payments until substantial completion, temporarily reducing project cash flow.",
+    "severity": "Low",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 12,
+      "quote": "The Owner will retain five percent (5%) of each progress payment until substantial completion.",
+      "verified": true
+     },
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 11,
+      "quote": "Payment: the Owner shall pay the Contractor within thirty (30) days after approval of each monthly application for payment, less retainage as provided in the Supplementary Conditions.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "category": "Site conditions",
+    "reason": "Utility locations are approximate, requiring exploratory test pits prior to laying pipe to prevent strikes.",
+    "severity": "Low",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 14,
+      "quote": "The locations of existing utilities shown on the Drawings are approximate.",
+      "verified": true
+     },
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 14,
+      "quote": "The Contractor shall excavate test pits to locate utilities before laying pipe.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "category": "Traffic",
+    "reason": "Detours require Mapleford Police Department approval at least seven days in advance, affecting scheduling.",
+    "severity": "Low",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 20,
+      "quote": "Detours require the approval of the Mapleford Police Department at least seven (7) days in advance.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "category": "Testing",
+    "reason": "Contractor must pay for trench compaction tests and perform required water main pressure testing and disinfection.",
+    "severity": "Low",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 16,
+      "quote": "The Contractor shall pay for one compaction test for every 200 linear feet of trench.",
+      "verified": true
+     },
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 18,
+      "quote": "Each section of new main shall be pressure tested at 150 psi for two (2) hours.",
+      "verified": true
+     }
+    ]
+   },
+   {
+    "category": "Labor",
+    "reason": "Mandatory Massachusetts prevailing wages, certified weekly payroll submittals, and registered apprentice rules apply to all project work.",
+    "severity": "Low",
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 15,
+      "quote": "The Massachusetts prevailing wage rate schedule issued for this project applies to all work.",
+      "verified": true
+     },
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 15,
+      "quote": "Apprentices must be registered with the Division of Apprentice Standards.",
+      "verified": true
+     }
+    ]
+   }
+  ],
+  "dropped_unverified": 1,
+  "note": null
+ },
+ "timings": {
+  "ingest_s": 0.05,
+  "bid_items_s": 0.5,
+  "index_s": 1.76,
+  "brief_risks_s": 121.54,
+  "total_s": 123.85
+ },
+ "citation_stats": {
+  "model_citations": 33,
+  "verified_citations": 33,
+  "risks_dropped_unverified": 1
+ },
+ "model": "gemini:gemini-flash-latest",
+ "created_at": "2026-10-15T00:17:35+00:00",
+ "synthetic": true,
+ "example_answers": [
+  {
+   "question": "What are the liquidated damages?",
+   "answer": {
+    "text": "The Contractor must pay the Owner liquidated damages of One Thousand Five Hundred Dollars ($1,500.00) per calendar day for each day the Work remains incomplete beyond the Contract Time.",
+    "found": true,
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 12,
+      "quote": "For each calendar day that the Work remains incomplete after the Contract Time, the Contractor shall pay the Owner liquidated damages of One Thousand Five Hundred Dollars ($1,500.00) per calendar day.",
+      "verified": true
+     }
+    ]
+   },
+   "status": "verified",
+   "checked_pages": [
+    [
+     "01_Contract_Documents.pdf",
+     12
+    ],
+    [
+     "01_Contract_Documents.pdf",
+     2
+    ],
+    [
+     "01_Contract_Documents.pdf",
+     11
+    ],
+    [
+     "01_Contract_Documents.pdf",
+     10
+    ],
+    [
+     "01_Contract_Documents.pdf",
+     21
+    ],
+    [
+     "01_Contract_Documents.pdf",
+     3
+    ]
+   ],
+   "raw_citations": 1
+  },
+  {
+   "question": "What testing is required for the new water main?",
+   "answer": {
+    "text": "Each section of the new water main must undergo pressure testing at 150 psi for two hours, with leakage not exceeding the allowable amount under AWWA C600. Additionally, two consecutive sets of bacteriological samples taken 24 hours apart must pass before the main is placed into service.",
+    "found": true,
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 18,
+      "quote": "Each section of new main shall be pressure tested at 150 psi for two (2) hours.",
+      "verified": true
+     },
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 18,
+      "quote": "Leakage shall not exceed the allowable amount in AWWA C600.",
+      "verified": true
+     },
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 18,
+      "quote": "Two consecutive sets of bacteriological samples taken 24 hours apart must pass before the main is placed in service.",
+      "verified": true
+     }
+    ]
+   },
+   "status": "verified",
+   "checked_pages": [
+    [
+     "01_Contract_Documents.pdf",
+     18
+    ],
+    [
+     "01_Contract_Documents.pdf",
+     1
+    ],
+    [
+     "01_Contract_Documents.pdf",
+     3
+    ],
+    [
+     "02_Addendum_1.pdf",
+     1
+    ],
+    [
+     "01_Contract_Documents.pdf",
+     9
+    ],
+    [
+     "01_Contract_Documents.pdf",
+     6
+    ]
+   ],
+   "raw_citations": 3
+  },
+  {
+   "question": "Are there night work restrictions?",
+   "answer": {
+    "text": "General working hours require work to be performed between 7:00 AM and 5:00 PM, Monday through Friday. However, work within the Route 110 intersection is required to be performed at night between 9:00 PM and 5:00 AM. Additionally, only one lane of Route 110 may be closed at any time during this work.",
+    "found": true,
+    "citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 12,
+      "quote": "Work shall be performed between 7:00 AM and 5:00 PM, Monday through Friday.",
+      "verified": true
+     },
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 13,
+      "quote": "Work within the Route 110 intersection shall be performed at night between 9:00 PM and 5:00 AM.",
+      "verified": true
+     },
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 13,
+      "quote": "Only one lane of Route 110 may be closed at any time.",
+      "verified": true
+     }
+    ]
+   },
+   "status": "verified",
+   "checked_pages": [
+    [
+     "01_Contract_Documents.pdf",
+     13
+    ],
+    [
+     "01_Contract_Documents.pdf",
+     12
+    ],
+    [
+     "01_Contract_Documents.pdf",
+     2
+    ],
+    [
+     "01_Contract_Documents.pdf",
+     10
+    ],
+    [
+     "01_Contract_Documents.pdf",
+     11
+    ],
+    [
+     "01_Contract_Documents.pdf",
+     3
+    ]
+   ],
+   "raw_citations": 3
+  }
+ ],
+ "changes": {
+  "addenda": [
+   {
+    "label": "Addendum No. 1",
+    "file": "02_Addendum_1.pdf",
+    "pages": [
+     1
+    ],
+    "unreadable_pages": []
+   },
+   {
+    "label": "Addendum No. 2",
+    "file": "03_Addendum_2_scanned.pdf",
+    "pages": [
+     1
+    ],
+    "unreadable_pages": [
+     1
+    ]
+   }
+  ],
+  "changes": [
+   {
+    "addendum": "Addendum No. 1",
+    "kind": "Bid date or time",
+    "summary": "The bid opening is changed from 11:00 AM on Thursday, November 19, 2026 to 2:00 PM on Tuesday, November 24, 2026.",
+    "affects": "bid_due",
+    "new_citations": [
+     {
+      "file": "02_Addendum_1.pdf",
+      "page": 1,
+      "quote": "The bid opening is changed to 2:00 PM on Tuesday, November 24, 2026.",
+      "verified": true
+     }
+    ],
+    "old_citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 3,
+      "quote": "Sealed bids will be received at the Office of the DPW Director, 40 Center Street, Mapleford, MA until 11:00 AM on Thursday, November 19, 2026, at which time they will be publicly opened and read aloud.",
+      "verified": true
+     }
+    ],
+    "source": "model"
+   },
+   {
+    "addendum": "Addendum No. 1",
+    "kind": "Bid items or quantities",
+    "summary": "Bid Form Item 7, 12-inch Gate Valve and Box estimated quantity is changed from 9 EA to 11 EA.",
+    "affects": "bid_items",
+    "new_citations": [
+     {
+      "file": "02_Addendum_1.pdf",
+      "page": 1,
+      "quote": "Bid Form Item 7, 12-inch Gate Valve and Box: the estimated quantity is changed from 9 EA to 11 EA.",
+      "verified": true
+     }
+    ],
+    "old_citations": [],
+    "source": "model"
+   },
+   {
+    "addendum": "Addendum No. 1",
+    "kind": "Answers to questions",
+    "summary": "Clarified that attendance at the pre-bid conference is not mandatory.",
+    "affects": "pre_bid_meeting",
+    "new_citations": [
+     {
+      "file": "02_Addendum_1.pdf",
+      "page": 1,
+      "quote": "Question: Is the pre-bid conference mandatory? Answer: No.",
+      "verified": true
+     }
+    ],
+    "old_citations": [
+     {
+      "file": "01_Contract_Documents.pdf",
+      "page": 3,
+      "quote": "Attendance is not mandatory.",
+      "verified": true
+     }
+    ],
+    "source": "model"
+   }
+  ],
+  "dropped_unverified": 0,
+  "note": "Some addendum pages could not be read, so changes on them are not listed: Addendum No. 2 page 1. Check them by hand."
+ }
+}

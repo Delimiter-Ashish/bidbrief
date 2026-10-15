@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+bidbrf/
+.venv/
+.model_cache/
+data/llm_cache/
+data/eval_runs/
+*.ocr.tmp.pdf
+.DS_Store
+*.egg-info/
+data/trials.json

@@ -1,0 +1,21 @@
+id,question,answerable,expected_contains,pages
+q01,What are the liquidated damages?,1,"1,500",12
+q02,What testing is required for the new water main?,1,150 psi,18
+q03,Are there night work restrictions?,1,9:00 PM,13
+q04,How much retainage is held?,1,5%,12
+q05,What is the contract time?,1,210,12
+q06,What are the working hours?,1,7:00 AM,12
+q07,What umbrella insurance is required?,1,"5,000,000",14
+q08,How are police details paid?,1,allowance,13
+q09,When can permanent paving be placed?,1,November 15,13
+q10,What compaction is required for trench backfill?,1,95,16
+q11,How must new mains be disinfected?,1,C651,18
+q12,Is groundwater expected?,1,12+00,16
+q13,What pipe class is required?,1,Class 52,18
+q14,How much notice is needed for a detour?,1,seven,20
+q15,Is the pre-bid conference mandatory?,1,not mandatory,3
+q16,What is the engineer's cost estimate for this project?,0,,
+q17,Is there a DBE or MBE participation goal?,0,,
+q18,What brand of fire hydrant must be used?,0,,
+q19,Who is the project manager at the engineering firm?,0,,
+q20,Is there an early completion bonus?,0,,

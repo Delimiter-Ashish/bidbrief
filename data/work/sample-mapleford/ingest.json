@@ -1,0 +1,209 @@
+{
+ "package_id": "sample-mapleford",
+ "files": [
+  "01_Contract_Documents.pdf",
+  "02_Addendum_1.pdf",
+  "03_Addendum_2_scanned.pdf"
+ ],
+ "working": {
+  "01_Contract_Documents.pdf": "01_Contract_Documents.pdf",
+  "02_Addendum_1.pdf": "02_Addendum_1.pdf",
+  "03_Addendum_2_scanned.pdf": "03_Addendum_2_scanned.pdf"
+ },
+ "pages": [
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 1,
+   "section": null,
+   "is_ocr": false,
+   "char_count": 413,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 2,
+   "section": "Table of Contents",
+   "is_ocr": false,
+   "char_count": 832,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 3,
+   "section": "Invitation for Bids",
+   "is_ocr": false,
+   "char_count": 1328,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 4,
+   "section": "Instructions to Bidders",
+   "is_ocr": false,
+   "char_count": 567,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 5,
+   "section": "Instructions to Bidders",
+   "is_ocr": false,
+   "char_count": 511,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 6,
+   "section": "Bid Form",
+   "is_ocr": false,
+   "char_count": 1035,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 7,
+   "section": "Bid Form",
+   "is_ocr": false,
+   "char_count": 542,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 8,
+   "section": "Bid Form",
+   "is_ocr": false,
+   "char_count": 314,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 9,
+   "section": "Agreement",
+   "is_ocr": false,
+   "char_count": 360,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 10,
+   "section": "General Conditions",
+   "is_ocr": false,
+   "char_count": 921,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 11,
+   "section": "General Conditions",
+   "is_ocr": false,
+   "char_count": 850,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 12,
+   "section": "Supplementary Conditions",
+   "is_ocr": false,
+   "char_count": 786,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 13,
+   "section": "Supplementary Conditions",
+   "is_ocr": false,
+   "char_count": 796,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 14,
+   "section": "Supplementary Conditions",
+   "is_ocr": false,
+   "char_count": 505,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 15,
+   "section": "Wage Rates",
+   "is_ocr": false,
+   "char_count": 329,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 16,
+   "section": "Specifications \u2014 Section 31 23 00 Excavation And Fill",
+   "is_ocr": false,
+   "char_count": 628,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 17,
+   "section": "Specifications \u2014 Section 31 23 00 Excavation And Fill",
+   "is_ocr": false,
+   "char_count": 686,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 18,
+   "section": "Specifications \u2014 Section 33 11 00 Water Utility Distribution Piping",
+   "is_ocr": false,
+   "char_count": 584,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 19,
+   "section": "Specifications \u2014 Section 02 61 00 Contaminated Soil",
+   "is_ocr": false,
+   "char_count": 366,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 20,
+   "section": "Specifications \u2014 Section 34 71 13 Traffic Control",
+   "is_ocr": false,
+   "char_count": 300,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 21,
+   "section": "Specifications \u2014 Section 34 71 13 Traffic Control",
+   "is_ocr": false,
+   "char_count": 682,
+   "problem": null
+  },
+  {
+   "file": "01_Contract_Documents.pdf",
+   "page": 22,
+   "section": "Drawings List",
+   "is_ocr": false,
+   "char_count": 256,
+   "problem": null
+  },
+  {
+   "file": "02_Addendum_1.pdf",
+   "page": 1,
+   "section": "Addendum",
+   "is_ocr": false,
+   "char_count": 541,
+   "problem": null
+  },
+  {
+   "file": "03_Addendum_2_scanned.pdf",
+   "page": 1,
+   "section": null,
+   "is_ocr": false,
+   "char_count": 0,
+   "problem": "No readable text (scanned page and OCR was not available or failed)"
+  }
+ ],
+ "ocr_engine": "none",
+ "notes": []
+}

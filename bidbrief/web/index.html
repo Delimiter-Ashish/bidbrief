@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BidBrief</title>
+  <meta name="description" content="Drop a public bid package. Get the bid items, key dates, risks and answers, each linked to the page it came from.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='5' y='3' width='22' height='26' rx='2' fill='%2314202A'/%3E%3Crect x='9' y='11' width='14' height='4' fill='%23FFE14D'/%3E%3Crect x='9' y='18' width='10' height='2' fill='%23fff'/%3E%3Crect x='9' y='22' width='12' height='2' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="BidBrief home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="3" width="22" height="26" rx="2"/><rect class="mark" x="9" y="11" width="14" height="4"/><rect class="line" x="9" y="18" width="10" height="2"/><rect class="line" x="9" y="22" width="12" height="2"/></svg>
+      <span>BidBrief</span>
+    </a>
+    <div class="topbar-right" id="access"></div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="drawer" id="drawer" aria-hidden="true" aria-labelledby="drawer-title" role="dialog">
+    <div class="drawer-head">
+      <div>
+        <p class="drawer-file" id="drawer-file"></p>
+        <h2 id="drawer-title">Page</h2>
+      </div>
+      <button class="icon-btn" id="drawer-close" aria-label="Close page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="drawer-body" id="drawer-body"></div>
+  </aside>
+
+  <div class="modal-backdrop" id="modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <h2 id="modal-title">Enter your access code</h2>
+      <p class="muted" id="modal-text">Your code lets you add your own bid packages. Packages you add are only visible with your code.</p>
+      <form id="code-form">
+        <label for="code-input" class="sr-only">Access code</label>
+        <input id="code-input" autocomplete="off" spellcheck="false" placeholder="e.g. ABCD-2345" maxlength="40">
+        <p class="form-error" id="code-error" role="alert"></p>
+        <div class="modal-actions">
+          <button type="button" class="btn ghost" id="code-cancel">Cancel</button>
+          <button type="submit" class="btn primary">Continue</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <noscript><p style="padding:2rem">BidBrief needs JavaScript turned on.</p></noscript>
+  <script src="static/app.js"></script>
+</body>
+</html>

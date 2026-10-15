@@ -1,0 +1,27 @@
+item_no,description,quantity,unit,page
+1,"Mobilization and Demobilization, not to exceed 3% of Total Base Bid",1,LS,6
+2,Police Details (Allowance),"60,000",$,6
+3,Traffic Management Plan and Temporary Signage,1,LS,6
+4,"12-inch Ductile Iron Water Main, Class 52, including fittings","3,120",LF,6
+5,"8-inch Ductile Iron Water Main, Class 52, including fittings","1,730",LF,6
+6,6-inch Ductile Iron Hydrant Branch,180,LF,6
+7,12-inch Gate Valve and Box,9,EA,6
+8,8-inch Gate Valve and Box,7,EA,6
+9,"Fire Hydrant Assembly, complete",12,EA,6
+10,"1-inch Copper Water Service, Main to Curb Stop",64,EA,6
+11,"1-inch Copper Water Service, Curb Stop to House","1,150",LF,6
+12,Cut and Cap Existing Water Main,6,EA,6
+13,"Temporary Water Service, complete",1,LS,6
+14,Test Pits for Existing Utilities,20,EA,6
+15,Rock Excavation and Disposal,150,CY,6
+16,Dewatering,1,LS,6
+17,Gravel Borrow for Trench Backfill,900,CY,7
+18,Disposal of Contaminated Soil (Allowance),200,TON,7
+19,"Temporary Trench Pavement, 3-inch","2,450",SY,7
+20,"Permanent Trench Pavement, 4-inch HMA","2,450",SY,7
+21,"Pavement Milling and 1.5-inch Overlay, curb to curb","9,800",SY,7
+22,Granite Curb Reset,320,LF,7
+23,Loam and Seed,"1,100",SY,7
+24,"Pressure Testing, Disinfection and Flushing",1,LS,7
+A-1,Replace 2-inch Galvanized Main on Birch Lane with 8-inch DI,420,LF,8
+A-2,Additional Hydrant Assembly,2,EA,8

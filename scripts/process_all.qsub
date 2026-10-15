@@ -1,0 +1,13 @@
+#!/bin/bash -l
+# Batch job: process every package in data/packages and run the evaluation.
+#   qsub scripts/process_all.qsub
+#$ -N bidbrief
+#$ -l h_rt=02:00:00
+#$ -pe omp 4
+#$ -j y
+#$ -o bidbrief_job.log
+cd "$SGE_O_WORKDIR"
+source scripts/env.sh
+export BIDBRIEF_OCR_JOBS=${NSLOTS:-4}
+python -m bidbrief process-all
+python -m bidbrief.eval --label "batch $(date +%F)"
